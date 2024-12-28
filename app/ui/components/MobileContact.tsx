@@ -11,8 +11,8 @@ const MobileContact = () => {
                 <p>NIGERIA</p>
             </li>
             <li className='flex flex-col gap-2'>
-                <Link href='mailto:ADMIN@CODEILLUSTRATED.COM'>ADMIN@CODEILLUSTRATED.COM</Link>
-                <Link href='https://x.com/codeillustrated'>TWITTER</Link>
+                <Link className='underline' href='mailto:ADMIN@CODEILLUSTRATED.COM'>ADMIN@CODEILLUSTRATED.COM</Link>
+                <Link className='underline'  href='https://x.com/codeillustrated'>TWITTER</Link>
             </li>
         </ul>
     </div>
