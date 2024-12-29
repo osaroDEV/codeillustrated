@@ -21,7 +21,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={`${teko.className} antialiased p-4 relative bg-[#f4f2ed]`}>
+      <body className={`${teko.className} antialiased h-screen p-4 relative bg-[#f4f2ed]`}>
         {children}
         <Menu />
         <ClientNavigation />

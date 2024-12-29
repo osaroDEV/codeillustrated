@@ -3,7 +3,7 @@ import MobileContact from './ui/components/MobileContact';
 
 export default function Home() {
   return (
-    <div className='relative h-screen'> 
+    <div className=''> 
       <Bio />
       <MobileContact />
     </div>
