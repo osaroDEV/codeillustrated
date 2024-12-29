@@ -9,7 +9,7 @@ const Navigation: FC = () => {
   const { menuOpen } = useMenuStore();
   return (
     <div className={clsx(
-      'bg-[#ff6542] h-screen w-full absolute top-0 left-0 z-50 p-4 flex justify-center items-center',
+      'h-screen w-full absolute top-0 left-0 z-50 p-4 flex justify-center items-center',
       {
         "text-white" : menuOpen === true,
       }
