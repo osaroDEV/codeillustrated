@@ -27,7 +27,7 @@ const Menu: FC = () => {
         })}
       >
         <span
-          className='text-2xl cursor-pointer hover-underline-animation'
+          className='text-3xl cursor-pointer hover-underline-animation'
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? 'Close' : 'Menu'}
