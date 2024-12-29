@@ -2,6 +2,7 @@
 import React, { FC } from 'react';
 import useMenu from '../../../store/useMenu';
 import clsx from 'clsx';
+import '@/app/ui/Menu.css';
 
 const Menu: FC = () => {
   const { menuOpen, setMenuOpen } = useMenu();
@@ -26,7 +27,7 @@ const Menu: FC = () => {
         })}
       >
         <span
-          className='text-2xl underline cursor-pointer'
+          className='text-2xl cursor-pointer hover-underline-animation'
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? 'Close' : 'Menu'}

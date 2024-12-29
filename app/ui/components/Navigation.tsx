@@ -3,6 +3,7 @@ import React, { FC } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
 import useMenuStore from '@/store/useMenu';
+import '@/app/ui/Navigation.css'; // Import the CSS file
 
 const Navigation: FC = () => {
   const { menuOpen } = useMenuStore();
@@ -14,7 +15,9 @@ const Navigation: FC = () => {
       }
       )}>
       <nav className='h-[calc(.5*100vh)] w-[calc(.5*100vw)]'>
-        <ul className='flex flex-col gap-4 items-center text-[3rem]'>
+        <ul className={clsx('flex flex-col gap-4 items-center text-[3rem]', {
+          'animate-list-items': menuOpen,
+        })}>
           <li>
             <Link className='underline' href='/about'>About</Link>
           </li>

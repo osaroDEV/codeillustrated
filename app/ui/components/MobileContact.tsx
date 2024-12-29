@@ -3,7 +3,7 @@ import React from 'react'
 
 const MobileContact = () => {
   return (
-    <div className='absolute left-0 bottom-0 text-[1rem] w-full px-4'>
+    <div className='absolute left-0 bottom-[2rem] text-[1rem] w-full px-4'>
         <ul className='flex justify-between w-full'>
             <li>{new Date().getFullYear()}</li>
             <li className='flex flex-col gap-2'>
