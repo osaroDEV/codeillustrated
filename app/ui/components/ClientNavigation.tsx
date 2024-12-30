@@ -1,26 +1,9 @@
-// 'use client';
-
-// import React, { FC } from 'react';
-// import Navigation from './Navigation';
-// import useMenuStore from '@/store/useMenu';
-
-// const ClientNavigation: FC = () => {
-//   const { menuOpen } = useMenuStore();
-
-//   return (
-//     <>
-//       {menuOpen && <Navigation />}
-//     </>
-//   );
-// };
-
-// export default ClientNavigation;
 'use client';
 
 import React, { FC } from 'react';
 import Navigation from './Navigation';
 import useMenuStore from '@/store/useMenu';
-import './ClientNavigation.css'; // Import the CSS file
+import '@/app/ui/ClientNavigation.css';
 
 const ClientNavigation: FC = () => {
   const { menuOpen } = useMenuStore();
@@ -28,9 +11,12 @@ const ClientNavigation: FC = () => {
   return (
     <>
       <div
-        className={`underlay transition-transform duration-500 ${menuOpen ? 'translate-x-0' : 'translate-x-full'}`}
-      ></div>
-      {menuOpen && <Navigation />}
+        className={`underlay transition-transform duration-500 ${
+          menuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        {menuOpen && <Navigation />}
+      </div>
     </>
   );
 };

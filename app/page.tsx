@@ -1,7 +1,8 @@
+import { FC } from 'react';
 import Bio from './ui/components/Bio';
 import MobileContact from './ui/components/MobileContact';
 
-export default function Home() {
+const Home: FC = () => {
   return (
     <div className=''> 
       <Bio />
@@ -9,3 +10,4 @@ export default function Home() {
     </div>
   );
 }
+export default Home
