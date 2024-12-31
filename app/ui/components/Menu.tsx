@@ -61,23 +61,25 @@ const Menu: FC = () => {
         return 'text-red-500';
       case 'contact':
         return 'text-green-500';
+      case 'home':
+        return 'text-[#ff6542]';
       default:
         return 'text-[#ff6542]';
     }
   };
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-    // Navigate to the link after updating the state
-    window.location.href = '/';
-  };
+  // const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+  //   e.preventDefault();
+  //   // Navigate to the link after updating the state
+  //   window.location.href = '/';
+  // };
 
   return (
     <>
       <main className='absolute top-0 left-0 z-[100] p-4'>
-        <Link
+        {menuOpen && (<Link
           href='/'
-          onClick={handleLinkClick}
+          onClick={() => setMenuOpen(false)}
           className={clsx(
             `${getFontColor()} font-bold text-[5rem] flex gap-1`,
             {
@@ -88,7 +90,7 @@ const Menu: FC = () => {
           <span>C</span>
           <span>I</span>
           <span>.</span>
-        </Link>
+        </Link>)}
       </main>
       <div
         className={clsx('absolute top-0 right-0 z-[100] p-4', {
