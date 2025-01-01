@@ -8,6 +8,7 @@ import useMenuStore from '@/store/useMenu';
 import AboutTop from '../ui/components/AboutTop';
 import usePageStore from '@/store/usePage';
 import Link from 'next/link';
+import ClientNavigation from '../ui/components/ClientNavigation';
 
 // const teko = Teko({
 //   weight: ['400', '300', '700'],
