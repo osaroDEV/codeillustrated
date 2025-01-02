@@ -29,7 +29,7 @@ const Menu: FC = () => {
 
   return (
     <>
-      <main className='absolute top-0 left-0 z-[100] p-4'>
+      <main className='absolute top-0 left-0 z-[100] p-4  h-screen w-full'>
         {menuOpen && (<Link
           href='/'
           onClick={() => setMenuOpen(false)}
@@ -46,7 +46,7 @@ const Menu: FC = () => {
         </Link>)}
       </main>
       <div
-        className={clsx('absolute top-0 right-0 z-[100] p-4', {
+        className={clsx('absolute top-0 right-0 z-[150] p-4', {
           'text-white': menuOpen === true || currentPage === 'about',
         })}
       >

@@ -27,7 +27,7 @@ const WorkLayout = ({
   }, [setCurrentPage]);
 
   return (
-      <>
+      <div className='absolute top-0 left-0 bg-[#111214] w-screen h-[300vh]'>
         {children}
         <Menu />
         <div className='absolute top-0 left-0 z-[200] p-4'>
@@ -41,8 +41,7 @@ const WorkLayout = ({
             <span>.</span>
           </Link>
         </div>
-        {/* <ClientNavigation /> */}
-      </>
+      </div>
     
   );
 }

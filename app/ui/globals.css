@@ -26,3 +26,7 @@
     background-image: linear-gradient(to bottom, #040f39 10px, #19386e 10px, #0a2151 20px);
   }
 }
+
+.responsive-image {
+  object-fit: cover; /* Ensure the image covers the container */
+}

@@ -10,7 +10,7 @@ const AboutUs: FC = () => {
         <span>01</span>
         <div className='flex flex-col gap-4'>
           <h2 className='text-3xl'>Web & App Development</h2>
-          <p className=''>
+          <p className='text-xl'>
             We design exceptional commercial interiors in close collaboration
             with our clients. Trusted by some of the UK&apos;s leading brands, we
             bring visions to life-from concept to installation-crafting
@@ -23,7 +23,7 @@ const AboutUs: FC = () => {
         <span>02</span>
         <div className='flex flex-col gap-4'>
           <h2 className='text-3xl'>Branding</h2>
-          <p className=''>
+          <p className='text-xl'>
           We specialise in building brands that capture the heart and soul of each company. By taking the time to truly understand our clients, we create meaningful, authentic brands that resonate deeply with their audiences. 
           </p>
         </div>
@@ -32,7 +32,7 @@ const AboutUs: FC = () => {
         <span>03</span>
         <div className='flex flex-col gap-4'>
           <h2 className='text-3xl'>Digital Marketing & Ads</h2>
-          <p className=''>
+          <p className='text-xl'>
           Our passion is crafting graphic design that elevates brands and leaves a lasting impression. We love creating striking visuals that capture attention. From bespoke illustrations and dynamic motion design to standout marketing, we bring a unique approach to every project 
           </p>
         </div>
@@ -41,7 +41,7 @@ const AboutUs: FC = () => {
         <span>04</span>
         <div className='flex flex-col gap-4'>
           <h2 className='text-3xl'>Others</h2>
-          <p className=''>
+          <p className='text-xl'>
           We thrive on design challenges—some of our favorite work has emerged from pushing ourselves to think differently. We&apos;re passionate about bringing fresh, innovative ideas to every brief. If you have an exciting project in mind, get in touch—we&apos;d love to make it a reality.
           </p>
         </div>

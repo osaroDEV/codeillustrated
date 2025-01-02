@@ -19,7 +19,7 @@ const Navigation: FC = () => {
           'animate-list-items': menuOpen,
         })}>
           <li>
-            <Link className='underline' href='/about' prefetch={true}
+            <Link className='underline' href='/about'
             onClick={() => setMenuOpen(!menuOpen)}
             >About</Link>
           </li>
