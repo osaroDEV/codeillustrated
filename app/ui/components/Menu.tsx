@@ -29,7 +29,7 @@ const Menu: FC = () => {
 
   return (
     <>
-      <main className='absolute top-0 left-0 z-[100] p-4  h-screen w-full'>
+      <main className='absolute top-0 left-0 z-[100] p-4 h-screen w-full'>
         {menuOpen && (<Link
           href='/'
           onClick={() => setMenuOpen(false)}

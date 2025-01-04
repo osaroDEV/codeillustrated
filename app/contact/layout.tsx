@@ -1,17 +1,10 @@
 'use client';
 import { useEffect } from 'react';
-// import { Teko } from "next/font/google";
 import '../ui/globals.css';
 import Menu from '../ui/components/Menu';
-// import ClientNavigation from '../ui/components/ClientNavigation';
 import usePageStore from '@/store/usePage';
 import Link from 'next/link';
 import useMenuStore from '@/store/useMenu';
-
-// const teko = Teko({
-//   weight: ["400", '300', "700"],
-//   subsets: ["latin"],
-// });
 
 const ContactLayout = ({
   children,
@@ -23,11 +16,11 @@ const ContactLayout = ({
 
   useEffect(() => {
     setCurrentPage('about');
-    document.title = 'Our Work: Codeillustrated';
+    document.title = 'Contact: Codeillustrated';
   }, [setCurrentPage]);
 
   return (
-    <>
+    <div className='absolute bg-[#111214] top-0 left-0 w-screen h-screen'>
       {children}
       <main className='absolute top-0 left-0 z-[200] p-4'>
         <Link href='/' onClick={() => setMenuOpen(false)} className='text-white font-bold text-[5rem] flex gap-1'>
@@ -37,8 +30,7 @@ const ContactLayout = ({
         </Link>
       </main>
       <Menu />
-      {/* <ClientNavigation /> */}
-    </>
+    </div>
   );
 };
 
