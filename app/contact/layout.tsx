@@ -22,7 +22,7 @@ const ContactLayout = ({
   return (
     <div className='absolute bg-[#111214] top-0 left-0 w-screen h-screen'>
       {children}
-      <main className='absolute top-0 left-0 z-[200] p-4'>
+      <main className='absolute top-0 left-0 z-[600] pl-4'>
         <Link href='/' onClick={() => setMenuOpen(false)} className='text-white font-bold text-[5rem] flex gap-1'>
           <span>C</span>
           <span>I</span>

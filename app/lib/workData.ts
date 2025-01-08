@@ -1,6 +1,8 @@
+
 export const workData = [
   {
     id: 1,
+    url: 'https://codeillustrated.com',
     client: 'Digital Agency & Coding School',
     category: 'Web Development',
     image:
@@ -8,6 +10,7 @@ export const workData = [
   },
   {
     id: 2,
+    url: 'https://codeillustrated.com',
     client: 'Tourism & Travel Agency',
     category: 'Advertising',
     image:
@@ -15,6 +18,7 @@ export const workData = [
   },
   {
     id: 3,
+    url: 'https://codeillustrated.com',
     client: 'Medical Laboratory & Health Care',
     category: 'Graphic Design',
     image:
@@ -22,6 +26,7 @@ export const workData = [
   },
   {
     id: 4,
+    url: 'https://codeillustrated.com',
     client: 'Digital Agency & Coding School',
     category: 'Web Development',
     image:

@@ -4,7 +4,7 @@ import MobileContact from './ui/components/MobileContact';
 
 const Home: FC = () => {
   return (
-    <div className=''> 
+    <div className='absolute top-0 left-0 bg-[#c76f5b] w-screen h-full'> 
       <Bio />
       <MobileContact />
     </div>
