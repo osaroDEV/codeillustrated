@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { crimson } from '../font';
+import Image from 'next/image';
 
 const Bio: FC = () => {
   return (
@@ -11,6 +12,7 @@ const Bio: FC = () => {
         to impactful marketing strategies, we deliver results that exceed
         expectations
       </p>
+      <Image className='mt-16' src='/team.png' alt='hero' width={300} height={300} />
     </div>
   );
 };
