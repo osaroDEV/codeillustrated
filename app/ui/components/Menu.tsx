@@ -1,7 +1,7 @@
 'use client';
 import React, { FC } from 'react';
 import useMenu from '../../../store/useMenu';
-import Link from 'next/link';
+// import Link from 'next/link';
 import '@/app/ui/Menu.css';
 
 const Menu: FC = () => {
@@ -9,8 +9,8 @@ const Menu: FC = () => {
 
   return (
     <>
-      <main className='absolute top-0 left-0 z-[0] p-4 h-screen w-full border'>
-        {menuOpen && (
+      <main className='absolute top-0 left-0 z-[0] p-4 h-screen w-full'>
+        {/* {menuOpen && (
           <Link
             href='/'
             onClick={() => setMenuOpen(false)}
@@ -20,7 +20,7 @@ const Menu: FC = () => {
             <span>I</span>
             <span>.</span>
           </Link>
-        )}
+        )} */}
       </main>
       <div
         className='text-white absolute top-0 right-0 z-[550] p-4'>
