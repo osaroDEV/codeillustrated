@@ -24,11 +24,13 @@ const RootLayout = ({
       <Head>
         <title>Home: Codeillustrated</title>
       </Head>
-      <body className={`${teko.className} antialiased h-screen w-screen p-4 relative bg-[#f4f2ed]`}>
+      <body
+        className={`${teko.className} antialiased h-screen w-screen p-4 relative bg-[#f4f2ed]`}
+      >
         <main className='absolute top-0 left-0 z-[600] pl-4'>
-          <Link 
-            href='/' 
-            onClick={() => setMenuOpen(false)} 
+          <Link
+            href='/'
+            onClick={() => setMenuOpen(false)}
             className='text-white font-bold text-[5rem] flex gap-1'
           >
             <span>C</span>
@@ -39,7 +41,7 @@ const RootLayout = ({
         {children}
         <Menu />
         <ClientNavigation />
-        </body>
+      </body>
     </html>
   );
 };
