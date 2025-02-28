@@ -25,7 +25,7 @@ const RootLayout = ({
         <title>Home: Codeillustrated</title>
       </Head>
       <body
-        className={`${teko.className} antialiased h-screen w-screen p-4 relative bg-[#f4f2ed]`}
+        className={`${teko.className} antialiased h-screen w-screen p-4 relative bg-[#c76f5b]`}
       >
         <main className='absolute top-0 left-0 z-[600] pl-4'>
           <Link

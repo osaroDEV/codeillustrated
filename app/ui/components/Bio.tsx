@@ -12,7 +12,7 @@ const Bio: FC = () => {
         to impactful marketing strategies, we deliver results that exceed
         expectations
       </p>
-      <Image className='mt-20' src='/team.png' alt='hero' width={300} height={300}  />
+      <Image className='mt-10' src='/team.png' alt='hero' width={300} height={300}  />
     </div>
   );
 };

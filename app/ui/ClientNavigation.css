@@ -10,6 +10,7 @@
 
 .translate-x-full {
   transform: translateX(100%);
+  display: none;
 }
 
 .translate-x-0 {
