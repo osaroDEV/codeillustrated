@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Bio: FC = () => {
   return (
-    <div className='mt-28 p-4'>
+    <div className='mt-28 p-4 flex flex-col items-center justify-center'>
       <p className={`${crimson.className} text-2xl text-white`}>
         We&apos;re a
         team of digital experts who blend creativity with technology to build
@@ -12,7 +12,7 @@ const Bio: FC = () => {
         to impactful marketing strategies, we deliver results that exceed
         expectations
       </p>
-      <Image className='mt-16' src='/team.png' alt='hero' width={300} height={300} />
+      <Image className='mt-16' src='/team.png' alt='hero' width={300} height={300}  />
     </div>
   );
 };
