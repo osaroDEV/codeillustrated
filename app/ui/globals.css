@@ -2,17 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: 'apercupro';
+  src: url('/fonts/apercu_regular_pro.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
 
 * {
   margin: 0;
@@ -20,14 +16,22 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'apercupro', sans-serif;
+}
+
 @layer utilities {
   .bg-stripes {
     background-size: 100% 20px;
-    background-image: linear-gradient(to bottom, #040f39 10px, #19386e 10px, #0a2151 20px);
+    background-image: linear-gradient(
+      to bottom,
+      #040f39 10px,
+      #19386e 10px,
+      #0a2151 20px
+    );
   }
 }
 
 .responsive-image {
   object-fit: cover; /* Ensure the image covers the container */
 }
-
