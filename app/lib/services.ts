@@ -2,7 +2,7 @@ export const services = [
   {
     id: '01',
     header: 'Web & App Development',
-    body: 'We design exceptional commercial interiors in close collaboration with our clients. Trusted by some of the UK&apos;s leading brands, we bring visions to life-from concept to installation-crafting functional, and beautiful spaces that embody each business&apos;s unique essence.',
+    body: "We design exceptional commercial interiors in close collaboration with our clients. Trusted by some of the UK's leading brands, we bring visions to life-from concept to installation-crafting functional, and beautiful spaces that embody each business&apos;s unique essence.",
   },
   {
     id: '02',
@@ -17,6 +17,6 @@ export const services = [
   {
     id: '04',
     header: 'Tutoring & Coaching',
-    body: 'We thrive on design challenges—some of our favorite work has emerged from pushing ourselves to think differently. We&apos;re passionate about bringing fresh, innovative ideas to every brief. If you have an exciting project in mind, get in touch—we&apos;d love to make it a reality.',
+    body: "We thrive on design challenges—some of our favorite work has emerged from pushing ourselves to think differently. We're passionate about bringing fresh, innovative ideas to every brief. If you have an exciting project in mind, get in touch—we&apos;d love to make it a reality.",
   },
 ];

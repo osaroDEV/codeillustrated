@@ -23,9 +23,7 @@ const AboutUs: FC = () => {
           <span>{service.id}</span>
           <div className='flex flex-col gap-4'>
             <h2 className='text-3xl'>{service.header}</h2>
-            <p className='text-xl'>
-              {service.body}
-            </p>
+            <p className='text-xl'>{service.body}</p>
           </div>
         </section>
       ))}

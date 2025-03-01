@@ -18,7 +18,7 @@ const Navigation: FC = () => {
     >
       <nav className='h-[calc(.5*100vh)] w-[calc(.5*100vw)]'>
         <ul
-          className={clsx('flex flex-col gap-4 items-center text-[3rem]', {
+          className={clsx('flex flex-col gap-4 items-center text-2xl', {
             'animate-list-items': menuOpen,
           })}
         >
@@ -28,7 +28,34 @@ const Navigation: FC = () => {
               href='/about'
               onClick={() => setMenuOpen(!menuOpen)}
             >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              className='underline'
+              href='/about'
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
               About
+            </Link>
+          </li>
+          <li>
+            <Link
+              className='underline'
+              href='/about'
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              Tutoring & Mentorship
+            </Link>
+          </li>
+          <li>
+            <Link
+              className='underline'
+              href='/about'
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              Web Development
             </Link>
           </li>
           <li>
