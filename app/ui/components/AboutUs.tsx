@@ -1,51 +1,34 @@
+import { services } from '@/app/lib/services';
+import clsx from 'clsx';
 import { FC } from 'react';
 
 const AboutUs: FC = () => {
   return (
-    <div className='mt-[calc(50vh)] absolute left-0 top-0 w-full'>
-      <section className='h-[12rem] flex justify-center items-center'>
-        <h1 className='text-7xl text-center text-[#111214] '>What We Do</h1>
+    <div className='mt-[calc(60vh)] absolute left-0 top-0 w-full'>
+      <section className='h-[12rem] flex justify-center items-center bg-white'>
+        <h1 className='text-7xl text-center text-[#111214]'>What We Do</h1>
       </section>
-      <section className='h-auto flex justify-center gap-4 bg-[#ebe3d1] p-8'>
-        <span>01</span>
-        <div className='flex flex-col gap-4'>
-          <h2 className='text-3xl'>Web & App Development</h2>
-          <p className='text-xl'>
-            We design exceptional commercial interiors in close collaboration
-            with our clients. Trusted by some of the UK&apos;s leading brands, we
-            bring visions to life-from concept to installation-crafting
-            functional, and beautiful spaces that embody each business&apos;s unique
-            essence.
-          </p>
-        </div>
-      </section>
-      <section className='h-auto flex justify-center gap-4 bg-[#d8d8d8] p-8'>
-        <span>02</span>
-        <div className='flex flex-col gap-4'>
-          <h2 className='text-3xl'>Branding</h2>
-          <p className='text-xl'>
-          We specialise in building brands that capture the heart and soul of each company. By taking the time to truly understand our clients, we create meaningful, authentic brands that resonate deeply with their audiences. 
-          </p>
-        </div>
-      </section>
-      <section className='h-auto flex justify-center gap-4 bg-[#faedbc] p-8'>
-        <span>03</span>
-        <div className='flex flex-col gap-4'>
-          <h2 className='text-3xl'>Digital Marketing & Ads</h2>
-          <p className='text-xl'>
-          Our passion is crafting graphic design that elevates brands and leaves a lasting impression. We love creating striking visuals that capture attention. From bespoke illustrations and dynamic motion design to standout marketing, we bring a unique approach to every project 
-          </p>
-        </div>
-      </section>
-      <section className='h-auto flex justify-center gap-4 text-white bg-[#111214] p-8'>
-        <span>04</span>
-        <div className='flex flex-col gap-4'>
-          <h2 className='text-3xl'>Others</h2>
-          <p className='text-xl'>
-          We thrive on design challenges—some of our favorite work has emerged from pushing ourselves to think differently. We&apos;re passionate about bringing fresh, innovative ideas to every brief. If you have an exciting project in mind, get in touch—we&apos;d love to make it a reality.
-          </p>
-        </div>
-      </section>
+
+      {services.map((service, index) => (
+        <section
+          key={service.id}
+          className={clsx('h-auto flex justify-center gap-4 p-8', {
+            'bg-[#ebe3d1]': index === 0,
+            'bg-[#d8d8d8]': index === 1,
+            'bg-[#faedbc]': index === 2,
+            'bg-[#111214]': index === 3,
+            'text-white': index === 3,
+          })}
+        >
+          <span>{service.id}</span>
+          <div className='flex flex-col gap-4'>
+            <h2 className='text-3xl'>{service.header}</h2>
+            <p className='text-xl'>
+              {service.body}
+            </p>
+          </div>
+        </section>
+      ))}
     </div>
   );
 };
