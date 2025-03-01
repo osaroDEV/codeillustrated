@@ -2,7 +2,7 @@ export const services = [
   {
     id: '01',
     header: 'Web & App Development',
-    body: "We design exceptional commercial interiors in close collaboration with our clients. Trusted by some of the UK's leading brands, we bring visions to life-from concept to installation-crafting functional, and beautiful spaces that embody each business&apos;s unique essence.",
+    body: "We design exceptional commercial interiors in close collaboration with our clients. Trusted by some of the UK's leading brands, we bring visions to life-from concept to installation-crafting functional, and beautiful spaces that embody each business's unique essence.",
   },
   {
     id: '02',

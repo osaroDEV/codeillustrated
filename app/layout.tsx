@@ -30,11 +30,11 @@ const RootLayout = ({
         <main className='absolute top-0 left-0 z-[600] pl-4'>
           <Link
             href='/'
-            onClick={() => setMenuOpen(false)}
+            onClick={() => setMenuOpen(false)} 
             className='text-white font-bold text-[5rem] flex gap-1'
           >
             <span>C</span>
-            <span>I</span>
+            <span>i</span>
             <span>.</span>
           </Link>
         </main>

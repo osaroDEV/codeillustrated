@@ -8,7 +8,16 @@ interface MenuState {
 
 const useMenuStore = create<MenuState>((set) => ({
   menuOpen: false,
-  setMenuOpen: (open) => set({ menuOpen: open }),
+  setMenuOpen: (open) => {
+    set(() => {
+      if (open) {
+        document.body.classList.add('overflow-hidden');
+      } else {
+        document.body.classList.remove('overflow-hidden');
+      }
+      return { menuOpen: open };
+    });
+  },
 }));
 
 export default useMenuStore;

@@ -1,5 +1,5 @@
 'use client';
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
 import useMenuStore from '@/store/useMenu';
@@ -7,6 +7,15 @@ import '@/app/ui/Navigation.css';
 
 const Navigation: FC = () => {
   const { menuOpen, setMenuOpen } = useMenuStore();
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+  }, [menuOpen]);
+
   return (
     <div
       className={clsx(
@@ -16,17 +25,17 @@ const Navigation: FC = () => {
         }
       )}
     >
-      <nav className='h-[calc(.5*100vh)] w-[calc(.5*100vw)]'>
+      <nav className='h-[calc(.5*100vh)] w-[calc(.7*100vw)]'>
         <ul
-          className={clsx('flex flex-col gap-4 items-center text-2xl', {
+          className={clsx('flex flex-col gap-8 items-center text-4xl', {
             'animate-list-items': menuOpen,
           })}
         >
           <li>
             <Link
               className='underline'
-              href='/about'
-              onClick={() => setMenuOpen(!menuOpen)}
+              href='/'
+              onClick={() => setMenuOpen(false)}
             >
               Home
             </Link>
@@ -35,7 +44,7 @@ const Navigation: FC = () => {
             <Link
               className='underline'
               href='/about'
-              onClick={() => setMenuOpen(!menuOpen)}
+              onClick={() => setMenuOpen(false)}
             >
               About
             </Link>
@@ -43,8 +52,8 @@ const Navigation: FC = () => {
           <li>
             <Link
               className='underline'
-              href='/about'
-              onClick={() => setMenuOpen(!menuOpen)}
+              href='/tutoring'
+              onClick={() => setMenuOpen(false)}
             >
               Tutoring & Mentorship
             </Link>
@@ -52,8 +61,8 @@ const Navigation: FC = () => {
           <li>
             <Link
               className='underline'
-              href='/about'
-              onClick={() => setMenuOpen(!menuOpen)}
+              href='/web-development'
+              onClick={() => setMenuOpen(false)}
             >
               Web Development
             </Link>
@@ -62,7 +71,7 @@ const Navigation: FC = () => {
             <Link
               className='underline'
               href='/work'
-              onClick={() => setMenuOpen(!menuOpen)}
+              onClick={() => setMenuOpen(false)}
             >
               Work
             </Link>
@@ -71,7 +80,7 @@ const Navigation: FC = () => {
             <Link
               className='underline'
               href='/contact'
-              onClick={() => setMenuOpen(!menuOpen)}
+              onClick={() => setMenuOpen(false)}
             >
               Contact
             </Link>
